@@ -63,9 +63,11 @@ The next thing we're going to do is create a custom log inside of our Log Analyt
 
 <br />
 Now we can run a query on our workspace. Select "Logs" on the first script line type "FAILED_RDP_WITH_GEO" and select "Run" and all of our failed login entries will print below.
+
 <br />
 We're going to create different sorting fields for our Raw Data, which contains our geo data.
 Expand one of the logs > right click > "Extract fields..."
+
 <br />
 Hilight latitude, longitude, destination host, username, sourcehost, state, country, label, and timestamp and label them accordingly. This will sort each entry into it's own column in our results field.
 
