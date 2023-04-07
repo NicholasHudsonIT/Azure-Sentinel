@@ -50,7 +50,9 @@ In this lab we will create a virtual machine in Azure, and create a vulnerable e
 Next we're going to implement our custom PowerShell script which will be logging each attack on our VM, using the following link:
 <a href="https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1">PowerShell Script</a>
 Copy the script and and open PowerShell ISE from the VM. Click "New" > paste > save "Log_Exporter" to our desktop. Before running change the API key so that we're able to receive the geodata on our VM, a new API key can be obtained here: <a href="https://ipgeolocation.io">API Key</a>. Sign up, create an account and receive your API key which we will input into line 2 of our "Log_exporter" script.
+
 The script essentially looks through the computers' Security Event Log for every failed login attempt, and creates a new log file containing geodata. Output logs can be found at "C:\ProgramData\".
+
 Once you've entered your API key you are ready to run your script. Any failed logins will be present below in the purple output containing geo data.
 
 <img src="https://i.imgur.com/6LXu1Qs.png" alt="PowerShell ISE"/>
@@ -64,6 +66,7 @@ The next thing we're going to do is create a custom log inside of our Log Analyt
 <br />
 Now we can run a query on our workspace. Select "Logs" on the first script line type "FAILED_RDP_WITH_GEO" and select "Run" and all of our failed login entries will print below.
 
+<br />
 <br />
 We're going to create different sorting fields for our Raw Data, which contains our geo data.
 Expand one of the logs > right click > "Extract fields..."
