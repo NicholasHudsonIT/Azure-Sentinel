@@ -90,3 +90,15 @@ Under Metric Settings > change "Size by" to "Event count", "Metric Label" to "la
 <br />
 <br />
 Now we just wait for log data to be returned as attackers begin to discover our vulnerability. Make sure to keep PowerShell script running on our VM so that subsequent failed logins are recorded on our custom log.
+
+<p>
+  <img src="https://i.imgur.com/qMNMOVQ.png?1" alt="PowerShell ISE pings"/>
+  </p>
+  
+<p>
+  <img src="https://i.imgur.com/hfZkXp6.png?3" alt="Sentinel Map"/>
+  </p>
+  
+ A few hours in, we can already begin to see login attempts from a couple locations throughout the world, with the biggest circle coming from 2.68k attempts coming from Missouri. And that is the end of our lab environment, be sure to delete your Azure honeypot workspace. 
+ <br />
+ Thank you for visiting!
