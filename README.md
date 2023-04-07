@@ -14,7 +14,7 @@
 - Remote Desktop
 - Microsoft Azure
 - Azure Sentinel (SIEM)
-- LLog Analytics Workspace
+- Log Analytics Workspace
 - PowerShell
 
 <h2>Operating Systems Used </h2>
