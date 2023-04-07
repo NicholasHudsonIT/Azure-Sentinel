@@ -85,7 +85,7 @@ Under Visualization > select "Map" and this will bring up "map settings"
 <p>
 <img src="https://i.imgur.com/FQAOcI6.png?2" alt="Map Settings"/>
   </p>
-Under Metric Settings > change "Metric Label" to "label_CF" and "Metric Value" to "event_count" to sort each instance by "country - longitude" and "number of pings." But you can play with these settings to change how data is plotted. Save map "Failed RDP World Map" > Done Editing.
+Under Metric Settings > change "Size by" to "Event count", "Metric Label" to "label_CF", and "Metric Value" to "event_count", to sort each instance by "country - longitude" and "number of pings." But you can play with these settings to change how data is plotted. Save map "Failed RDP World Map" > Done Editing.
 
 <br />
 <br />
