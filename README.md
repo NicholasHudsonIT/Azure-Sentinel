@@ -28,6 +28,6 @@ In this lab we will create a virtual machine in Azure, and create a vulnerable e
 </p>
 <br />
 <p>
-  Our first step is creating our Azure account and setting up our virtual machine for our vulnerable environment.
+  Our first step is creating our Azure account and setting up our virtual machine for our vulnerable environment. We will name our virtual machine "Honeypot-vm."
   <img src="https://i.imgur.com/7Dtl9jQ.png" alt="Lab Plan"/>
   
