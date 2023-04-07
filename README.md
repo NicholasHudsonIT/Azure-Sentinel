@@ -55,11 +55,11 @@ Once you've entered your API key you are ready to run your script. Any failed lo
 
 <img src="https://i.imgur.com/6LXu1Qs.png" alt="PowerShell ISE"/>
 
-Failed login data can be found at C:\ProgramData\failed_rdp including sample data to later train our analytics workspace what to sort for out Sentinel Map.
+Failed login data can be found at C:\ProgramData\failed_rdp including sample data to later train our analytics workspace what to sort data for our Sentinel Map.
 
 <img src="https://i.imgur.com/IYSTSLC.png" alt="Failed RDP Logs"/>
 
-
+The next thing we're going to do is create a custom log inside of our Log Analytics Workspace that will allow us to bring the custom log with out geo data to our LAW. From law-honeypot select custom logs > add custom log > add log file. From here we have to bring over our custom log from our virtual machine with the login data "C:\ProgamData\failed_rdp". Open "notepad" paste the data and save as a ".log". Now we can upload this to our log files. This is going to be used to train log analytics what to look for in the log files. Name our custom log name "FAILED_RDP_WITH_GEO" > Review and create custom log.
 
 
 
