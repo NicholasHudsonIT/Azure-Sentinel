@@ -30,7 +30,7 @@ In this lab we will create a virtual machine in Azure, and create a vulnerable e
   Our first step is creating our Azure account and setting up our virtual machine for our vulnerable environment. We will name our resource group "Honeypot" and virtual machine "Honeypot-vm" respectfully.
   <img src="https://i.imgur.com/7Dtl9jQ.png" alt="Lab Plan"/>
   
-  Next we will create our Network Security Group and set custom settings
+  Next we will create our Network Security Group, name it "Honeypot-vm-nsg" and set custom settings.
   
   <img src="https://i.imgur.com/s3cOZM0.png" alt="Network Security Group"/>
   
