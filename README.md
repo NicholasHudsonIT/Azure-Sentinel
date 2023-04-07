@@ -73,6 +73,13 @@ Expand one of the logs > right click > "Extract fields..."
 
 <br />
 <br />
-Hilight latitude, longitude, destination host, username, sourcehost, state, country, label, and timestamp and label them accordingly. This will sort each entry into it's own column in our results field.
+Highlight latitude, longitude, destination host, username, sourcehost, state, country, label, and timestamp inputs and label them accordingly. This will sort each entry into it's own column in our results field.
 
 <img src="https://i.imgur.com/du1XPbP.png" alt="Custom Fields"/>
+
+Run "Query" again and you will see log data is now parsed into individual columns. 
+<br />
+Next we can set up our map in Sentinel. Go to our Azure Portal, type Sentinel > Overview. You will see a default dashboard, we want to edit this to set up our geo map. Click on "Workbook" > Add Workbook > Edit (remove the two default widgets) > Add query > paste (FAILED_RDP_WITH_GEO_CL | summarize event_count=count() by sourcehost_CF, latitude_CF, longitude_CF, country_CF, label_CF, destinationhost_CF | where destinationhost_CF != "samplehost" | where sourcehost_CF != "" )
+<br />
+Under Visualization > select "Map" and this will bring up "map settings"
+<img src="https://i.imgur.com/FQAOcI6.png" alt="Map Settings"/>
