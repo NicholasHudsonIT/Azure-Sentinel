@@ -1,11 +1,10 @@
 # Azure
-<h1> SIEM - Azure Sentinel Tutorial Tutorial</h1>
+<h1> SIEM - Azure Sentinel Setup Tutorial</h1>
 <p align="center">
 <img src="https://i.imgur.com/NRfvbrz.png" alt="Azure Sentinel Logo"/>
 </p>
 
 <h1>How to Setup a Basic Home Lab and use Azure Sentinel (SIEM), connect it to a live virtual machine acting as a honey pot. We will observe live attacks from around the world. We will also use a custom PowerShell script to look up the attackers geolocation information and plot it on the Sentinel Map.</h1>
-This lab tutorial outlines the implementation of Active Directory within Windows Servers using Virtual Machines.<br />
 
 <h2>Environments and Technologies Used</h2>
 
@@ -20,7 +19,6 @@ This lab tutorial outlines the implementation of Active Directory within Windows
 
 - Windows Server 2019
 - Windows 10 (21H2)
-
 
 <h2>Deployment and Configuration Steps</h2>
 
