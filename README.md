@@ -27,7 +27,14 @@
 In this lab we will create a virtual machine in Azure, and create a vulnerable environment by turning the external and Windows firewall off to make it enticing to attackers. Next we are going to create a Log Repository in Azure called a Log Analytics Workspace, which will be used to ingest our logs from the virtual machine. And then we're going to setup Azure Sentinel (SIEM) to create a map that maps all the different attacks from all over the world. To help us locate locate each attack by country and coordniates, we will use a custom PowerShell script to extract the IP Address from the Windows Log and send it to a third party API. And the API will derive the information and send it back to our virtual machine, which will then be used to create a custom log with the attackers location data.
 </p>
 <br />
-<p>
-  Our first step is creating our Azure account and setting up our virtual machine for our vulnerable environment. We will name our virtual machine "Honeypot-vm."
+  Our first step is creating our Azure account and setting up our virtual machine for our vulnerable environment. We will name our resource group "Honeypot" and virtual machine "Honeypot-vm" respectfully.
   <img src="https://i.imgur.com/7Dtl9jQ.png" alt="Lab Plan"/>
+  
+  Next we will create our Network Security Group and set custom settings
+  
+  <img src="https://i.imgur.com/s3cOZM0.png" alt="Network Security Group"/>
+  
+
+
+
   
