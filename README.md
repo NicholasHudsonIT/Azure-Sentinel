@@ -27,6 +27,6 @@
 <p>
 </p>
 <p>
-In this lab we will create two Virtual Machines. One will be a Domain Controller using Windows Server 2019, and the other will be the Client machine using Windows 10. We will use two NICs on our Domain Controller, one will connected to our personal home network and we will use the internal network to establish a static IP, then download Active Directory Domain Services on our DC to connect to the client machine. Client machine will then be joined to the domain. We will establish a connection through the DNS settings on the client machine, the client machine will use the DC as its DNS server. We will also be adding 1,000 active users using a Powershell script that are able to login using our Client machine.
+In this lab we will create a virtual machine in Azure, and create a vulnerable environment by turning the external and Windows firewall off to make it enticing to attackers. Next we are going to create a Log Repository in Azure called a Log Analytics Workspace, which will be used to ingest our logs from the virtual machine. And then we're going to setup Azure Sentinel (SIEM) to create a map that maps all the different attacks from all over the world. 
 </p>
 <br />
