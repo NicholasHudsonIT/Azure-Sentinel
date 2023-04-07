@@ -61,9 +61,12 @@ Failed login data can be found at C:\ProgramData\failed_rdp including sample dat
 
 The next thing we're going to do is create a custom log inside of our Log Analytics Workspace that will allow us to bring the custom log with out geo data to our LAW. From law-honeypot select custom logs > add custom log > add log file. From here we have to bring over our custom log from our virtual machine with the login data "C:\ProgamData\failed_rdp". Open "notepad" paste the data and save as a ".log". Now we can upload this to our log files. This is going to be used to train log analytics what to look for in the log files. Name our custom log name "FAILED_RDP_WITH_GEO" > Review and create custom log.
 
+<br />
 Now we can run a query on our workspace. Select "Logs" on the first script line type "FAILED_RDP_WITH_GEO" and select "Run" and all of our failed login entries will print below.
+<br />
 We're going to create different sorting fields for our Raw Data, which contains our geo data.
 Expand one of the logs > right click > "Extract fields..."
+<br />
 Hilight latitude, longitude, destination host, username, sourcehost, state, country, label, and timestamp and label them accordingly. This will sort each entry into it's own column in our results field.
 
 <img src="https://i.imgur.com/du1XPbP.png" alt="Custom Fields"/>
