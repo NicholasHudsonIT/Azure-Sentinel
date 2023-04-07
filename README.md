@@ -46,4 +46,8 @@ In this lab we will create a virtual machine in Azure, and create a vulnerable e
  Once we are logged in to our Azure VM, the first thing we want to do is turn off the firewalls. Search "wf.msc" in the search bar and turn off firewalls for both our "domain profile" and "public profile."
 
 <img src="https://i.imgur.com/10msmyU.png" alt="Firewall settings"/>
+
+Next we're going to implement our custom PowerShell script which will be logging each attack on our VM, using the following link:
+<a href="https://github.com/joshmadakor1/Sentinel-Lab/blob/main/Custom_Security_Log_Exporter.ps1">PowerShell Script</a>
+Copy the script and and open PowerShell ISE from the VM. Click "New" > paste > save "Log_Exporter" to our desktop. Before running change the API key so that we're able to receive the geodata on our VM, a new API key can be obtained here: <a href="https://ipgeolocation.io">API Key</a>. Sign up, create an account and receive your API key which we will input into line 2 of our "Log_exporter" script.
   
