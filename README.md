@@ -30,11 +30,14 @@ In this lab we will create a virtual machine in Azure, and create a vulnerable e
   Our first step is creating our Azure account and setting up our virtual machine for our vulnerable environment. We will name our resource group "Honeypot" and virtual machine "Honeypot-vm" respectfully.
   <img src="https://i.imgur.com/7Dtl9jQ.png" alt="Lab Plan"/>
   
-  Next we will create our Network Security Group, name it "Honeypot-vm-nsg" and set custom settings.
+  Next we will create our Network Security Group, name it "Honeypot-vm-nsg" and set custom settings. Now we can create our virtual machine, this process will take a few minutes to deploy. Next we can create our Log Analytics Workspace, which will be keeping logs of each login attempt for our honeypot.
   
   <img src="https://i.imgur.com/s3cOZM0.png" alt="Network Security Group"/>
   
-
+  Search "log analytics workspace" in the Azure search bar, select our resource group and name it "law-honeypot1," Review and Create.
+  Next we can add Microsoft Sentinel to our new workspace, and this is the SIEM we will be using to track and map our attacks by country, longitude, latitude, date & time, and number of attacks. To do so search "Sentinel" and select our "law-honeypot1" resource group that we just created.
+  
+ <img src="https://i.imgur.com/azR6cxG.png" alt="Adding Sentinel"/>
 
 
   
