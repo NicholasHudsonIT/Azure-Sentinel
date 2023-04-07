@@ -72,6 +72,7 @@ We're going to create different sorting fields for our Raw Data, which contains 
 Expand one of the logs > right click > "Extract fields..."
 
 <br />
+<br />
 Hilight latitude, longitude, destination host, username, sourcehost, state, country, label, and timestamp and label them accordingly. This will sort each entry into it's own column in our results field.
 
 <img src="https://i.imgur.com/du1XPbP.png" alt="Custom Fields"/>
