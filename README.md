@@ -39,13 +39,11 @@ In this lab we will create a virtual machine in Azure, and create a vulnerable e
   
  <img src="https://i.imgur.com/azR6cxG.png" alt="Adding Sentinel"/>
  
- With Sentinel added to our workspace, we can now open our virtual machine environment. From Azure we can find the public IP address for our VM, from here we will copy it and open Oracle VirtualBox. With our Windows 10 VM open search "Remote Desktop Connection" to create access our Azure VM using the IP address provided
+ With Sentinel added to our workspace, we can now open our virtual machine environment. From Azure we can find the public IP address for our VM, from here we will copy it and open Oracle VirtualBox. With our Windows 10 VM open search "Remote Desktop Connection" to create access our Azure VM using the IP address provided.
  
  <img src="https://i.imgur.com/4qCnbuf.png" alt="Remote Desktop Connection"/>
  
- 
- 
- Once we are logged in, the first thing we want to do is turn off the firewalls. Search "wf.msc" in the search bar
+ Once we are logged in to our Azure VM, the first thing we want to do is turn off the firewalls. Search "wf.msc" in the search bar and turn off firewalls for both our "domain profile" and "public profile."
 
-
+<img src="https://i.imgur.com/10msmyU.png" alt="Firewall settings"/>
   
