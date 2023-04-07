@@ -38,6 +38,14 @@ In this lab we will create a virtual machine in Azure, and create a vulnerable e
   Next we can add Microsoft Sentinel to our new workspace, and this is the SIEM we will be using to track and map our attacks by country, longitude, latitude, date & time, and number of attacks. To do so search "Sentinel" and select our "law-honeypot1" resource group that we just created.
   
  <img src="https://i.imgur.com/azR6cxG.png" alt="Adding Sentinel"/>
+ 
+ With Sentinel added to our workspace, we can now open our virtual machine environment. From Azure we can find the public IP address for our VM, from here we will copy it and open Oracle VirtualBox. With our Windows 10 VM open search "Remote Desktop Connection" to create access our Azure VM using the IP address provided
+ 
+ <img src="https://i.imgur.com/4qCnbuf.png" alt="Remote Desktop Connection"/>
+ 
+ 
+ 
+ Once we are logged in, the first thing we want to do is turn off the firewalls. Search "wf.msc" in the search bar
 
 
   
